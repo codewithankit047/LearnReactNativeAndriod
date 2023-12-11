@@ -1,15 +1,20 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Button, Text, View} from 'react-native';
 
-const UserData = () => {
+const UserData = (props) => {
   const [state, setstate] = useState('Ankit');
   const fruit = () => {
     setstate('Rahul');
     console.warn(state);
   };
+  useEffect(() => {
+    if (props) {
+      console.warn(props.age);
+    }
+  }, [props]);
   return (
     <>
-      <View>
+      <View style={{backgroundColor: 'yellow'}}>
         <Text>User Data Dashboard</Text>
         <Text>Name : Ankit</Text>
         <Text>Email : Codewithankit047@gmail.com</Text>

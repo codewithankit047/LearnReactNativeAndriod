@@ -25,8 +25,8 @@ const App = () => {
       </View>
       <View style={{paddingTop: 20}}>
         <Button title="Press here" />
-        <UserData />
-        <CompanyData />
+        <UserData age={age} />
+        <CompanyData age={age} />
       </View>
     </>
   );
