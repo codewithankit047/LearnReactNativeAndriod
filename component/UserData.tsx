@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Button, Text, View} from 'react-native';
 
 const UserData = () => {
-  const  fruit =()=>{
-    console.warn("The function is called")
-  }
+  const [state, setstate] = useState('Ankit');
+  const fruit = () => {
+    setstate('Rahul');
+    console.warn(state);
+  };
   return (
     <>
       <View>
@@ -13,7 +15,10 @@ const UserData = () => {
         <Text>Email : Codewithankit047@gmail.com</Text>
         <Text>Age: 29</Text>
         <Text>Phone no " 89330394274</Text>
-        <Button title="on press " color={'green'} onPress={()=>fruit()}/>
+        <Button title="on press " color={'green'} onPress={() => fruit()} />
+      </View>
+      <View>
+        <Text>{state === 'Ankit' ? 'True' : 'False'}</Text>
       </View>
     </>
   );
