@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Button, Text, View} from 'react-native';
+import {Button, Text, View, StyleSheet} from 'react-native';
+import { Exstyles } from './style';
 
-const UserData = (props) => {
+const UserData = props => {
   const [state, setstate] = useState('Ankit');
   const fruit = () => {
     setstate('Rahul');
@@ -15,8 +16,11 @@ const UserData = (props) => {
   return (
     <>
       <View style={{backgroundColor: 'yellow'}}>
-        <Text>User Data Dashboard</Text>
-        <Text>Name : Ankit</Text>
+        <Text style={{fontSize: 30}}>User Data Dashboard</Text>
+        <Text style={Exstyles.textBox}>Name : Ankit</Text>
+        <Text style={Exstyles.textBox}>Name : Ankit</Text>
+        <Text style={styles.textBox}>Name : Ankit</Text>
+        <Text style={styles.textBox}>Name : Ankit</Text>
         <Text>Email : Codewithankit047@gmail.com</Text>
         <Text>Age: 29</Text>
         <Text>Phone no " 89330394274</Text>
@@ -28,4 +32,12 @@ const UserData = (props) => {
     </>
   );
 };
+
+const styles = StyleSheet.create({
+  textBox: {
+    color: 'blue',
+    fontSize: 30,
+    backgroundColor: 'lightblue',
+  },
+});
 export default UserData;
