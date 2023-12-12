@@ -11,7 +11,7 @@ const App = () => {
   }
   return (
     <>
-      <View>
+      <View style={{overflow: 'scroll'}}>
         <Text style={{fontSize: 20, textAlign: 'center'}}>My Dashboard</Text>
         <Text style={{fontSize: 30}}>{name} </Text>
         <Text style={{fontSize: 30}}>
