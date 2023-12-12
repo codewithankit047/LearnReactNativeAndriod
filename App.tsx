@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, View, Button} from 'react-native';
 import UserData from './component/UserData';
 import CompanyData from './component/CompanyData';
+import Form from './component/Form';
 
 const App = () => {
   const name = 'ankit';
@@ -11,7 +12,7 @@ const App = () => {
   }
   return (
     <>
-      <View style={{overflow: 'scroll'}}>
+      {/* <View style={{overflow: 'scroll'}}>
         <Text style={{fontSize: 20, textAlign: 'center'}}>My Dashboard</Text>
         <Text style={{fontSize: 30}}>{name} </Text>
         <Text style={{fontSize: 30}}>
@@ -27,7 +28,8 @@ const App = () => {
         <Button title="Press here" />
         <UserData age={age} />
         <CompanyData age={age} />
-      </View>
+      </View> */}
+      <Form />
     </>
   );
 };

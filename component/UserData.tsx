@@ -10,7 +10,7 @@ const UserData = props => {
   };
   useEffect(() => {
     if (props) {
-      console.warn(props.age);
+      // console.warn(props.age);
     }
   }, [props]);
   return (

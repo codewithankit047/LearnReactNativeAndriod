@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, TextInput, View} from 'react-native';
+import {Button, Text, TextInput, View} from 'react-native';
 
 const CompanyData = () => {
   const [name, setName] = useState('undefined');
@@ -15,7 +15,15 @@ const CompanyData = () => {
             margin: 10,
           }}
           placeholder="enter your name"
-          onChangeText={(text) => {setName(text)}}
+          onChangeText={text => {
+            setName(text);
+          }}
+        />
+        <Button
+          title="clear input value "
+          onPress={() => {
+            setName('');
+          }}
         />
       </View>
     </>
