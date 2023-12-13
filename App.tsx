@@ -1,37 +1,41 @@
 import React from 'react';
-import {Text, View, Button} from 'react-native';
-import UserData from './component/UserData';
-import CompanyData from './component/CompanyData';
-import Form from './component/Form';
+import {Text, View, Button, StyleSheet} from 'react-native';
+import Swiper from 'react-native-deck-swiper';
 
 const App = () => {
-  const name = 'ankit';
-  const age = 39;
-  function fruit() {
-    return 'apple';
-  }
+  const data = [
+    {id: 1, color: 'blue'},
+    {id: 2, color: 'green'},
+    {id: 3, color: 'yellow'},
+    {id: 4, color: 'orange'},
+    {id: 5, color: 'red'},
+  ];
   return (
     <>
-      {/* <View style={{overflow: 'scroll'}}>
-        <Text style={{fontSize: 20, textAlign: 'center'}}>My Dashboard</Text>
-        <Text style={{fontSize: 30}}>{name} </Text>
-        <Text style={{fontSize: 30}}>
-          {age > 39 ? 'greater then 39 ' : 'greater then and eqal to 39a'}{' '}
-        </Text>
-        <Text style={{fontSize: 30}}>Contact </Text>
-        <Text style={{fontSize: 30}}>{fruit()} </Text>
-      </View>
-      <View>
-        <Button title="Press here" />
-      </View>
-      <View style={{paddingTop: 20}}>
-        <Button title="Press here" />
-        <UserData age={age} />
-        <CompanyData age={age} />
-      </View> */}
-      <Form />
+      <Swiper
+        cards={data}
+        renderCard={card => (
+          <View style={[styles.card, {backgroundColor: card.color}]} />
+        )}
+        onSwiped={cardIndex => console.log('Card swiped: ', cardIndex)}
+        onSwipedAll={() => console.log('All cards have been swiped')}
+        cardIndex={0}
+        backgroundColor="transparent"
+        stackSize={3}
+        stackSeparation={20}
+      />
     </>
   );
 };
+const styles = StyleSheet.create({
+  card: {
+    flex: 1,
+    borderRadius: 10,
+    padding: 20,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    height: 200,
+  },
+});
 
 export default App;
