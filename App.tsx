@@ -3,6 +3,7 @@ import {Text, View, Button} from 'react-native';
 import UserData from './component/UserData';
 import CompanyData from './component/CompanyData';
 import Form from './component/Form';
+import List from './component/List';
 
 const App = () => {
   const name = 'ankit';
@@ -29,7 +30,8 @@ const App = () => {
         <UserData age={age} />
         <CompanyData age={age} />
       </View> */}
-      <Form />
+      {/* <Form /> */}
+      <List />
     </>
   );
 };
