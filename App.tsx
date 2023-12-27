@@ -4,6 +4,7 @@ import UserData from './component/UserData';
 import CompanyData from './component/CompanyData';
 import Form from './component/Form';
 import List from './component/List';
+import Grid from './component/Grid';
 
 const App = () => {
   const name = 'ankit';
@@ -31,7 +32,8 @@ const App = () => {
         <CompanyData age={age} />
       </View> */}
       {/* <Form /> */}
-      <List />
+      {/* <List /> */}
+      <Grid />
     </>
   );
 };
