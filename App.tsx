@@ -5,6 +5,7 @@ import CompanyData from './component/CompanyData';
 import Form from './component/Form';
 import List from './component/List';
 import Grid from './component/Grid';
+import LoopFlatList from './component/LoopFlatList';
 
 const App = () => {
   const name = 'ankit';
@@ -33,7 +34,8 @@ const App = () => {
       </View> */}
       {/* <Form /> */}
       {/* <List /> */}
-      <Grid />
+      {/* <Grid /> */}
+      <LoopFlatList />
     </>
   );
 };
