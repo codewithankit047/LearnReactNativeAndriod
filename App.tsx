@@ -6,6 +6,7 @@ import Form from './component/Form';
 import List from './component/List';
 import Grid from './component/Grid';
 import LoopFlatList from './component/LoopFlatList';
+import SectionListMain from './component/SectionListMain';
 
 const App = () => {
   const name = 'ankit';
@@ -35,7 +36,8 @@ const App = () => {
       {/* <Form /> */}
       {/* <List /> */}
       {/* <Grid /> */}
-      <LoopFlatList />
+      {/* <LoopFlatList /> */}
+      <SectionListMain />
     </>
   );
 };
