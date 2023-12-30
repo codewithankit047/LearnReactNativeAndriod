@@ -8,6 +8,7 @@ import Grid from './component/Grid';
 import LoopFlatList from './component/LoopFlatList';
 import SectionListMain from './component/SectionListMain';
 import ClassComponentMain from './component/ClassComponent';
+import Hooks from './component/Hooks';
 
 const App = () => {
   const name = 'ankit';
@@ -39,7 +40,8 @@ const App = () => {
       {/* <Grid /> */}
       {/* <LoopFlatList /> */}
       {/* <SectionListMain /> */}
-      <ClassComponentMain />
+      {/* <ClassComponentMain /> */}
+      <Hooks />
     </>
   );
 };

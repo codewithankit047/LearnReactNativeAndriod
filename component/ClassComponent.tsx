@@ -5,9 +5,10 @@ import { Text, View } from "react-native";
 export default function ClassComponentMain() {
   return (
     <View>
-    <Text>
-        Class Component
+    <Text style={{fontSize:30}}>
+        Class Component  
     </Text>
 </View>
   )
 }
+ 
