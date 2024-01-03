@@ -10,6 +10,7 @@ import SectionListMain from './component/SectionListMain';
 import ClassComponentMain from './component/ClassComponent';
 import Hooks from './component/Hooks';
 import ShowHide from './component/showHide';
+import UnmountCycle from './component/UnmountCycle';
 
 const App = () => {
   const name = 'ankit';
@@ -43,7 +44,8 @@ const App = () => {
       {/* <SectionListMain /> */}
       {/* <ClassComponentMain /> */}
       {/* <Hooks /> */}
-      <ShowHide />
+      {/* <ShowHide /> */}
+      <UnmountCycle />
     </>
   );
 };
