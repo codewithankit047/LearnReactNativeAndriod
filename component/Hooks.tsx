@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Button, Text, View} from 'react-native';
 
-const Hooks = () => {
+const Hooks = () => {  
   let [state, setstate] = useState(0);
   useEffect(() => {
     console.warn(state);
@@ -20,3 +20,4 @@ const Hooks = () => {
 };
 
 export default Hooks;
+ 

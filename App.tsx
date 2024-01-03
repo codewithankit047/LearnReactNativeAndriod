@@ -9,6 +9,7 @@ import LoopFlatList from './component/LoopFlatList';
 import SectionListMain from './component/SectionListMain';
 import ClassComponentMain from './component/ClassComponent';
 import Hooks from './component/Hooks';
+import ShowHide from './component/showHide';
 
 const App = () => {
   const name = 'ankit';
@@ -41,7 +42,8 @@ const App = () => {
       {/* <LoopFlatList /> */}
       {/* <SectionListMain /> */}
       {/* <ClassComponentMain /> */}
-      <Hooks />
+      {/* <Hooks /> */}
+      <ShowHide />
     </>
   );
 };
